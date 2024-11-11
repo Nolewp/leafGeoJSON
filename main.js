@@ -20,7 +20,11 @@ document.getElementById('file-input').addEventListener('change', function(event)
         };
         reader.readAsText(file);
     }
+    document.getElementById("FeatureWindow").innerHTML = 'Feature Properties'
+    document.getElementById("feature-properties").innerHTML = "<p>Click on a feature to see its properties.</p>";
 });
+
+
 
 // Function to handle each feature (add click event)
 function onEachFeature(feature, layer) {
